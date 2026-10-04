@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 560" width="1040" height="560" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="d" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#334155"/></marker>
+  </defs>
+  <rect width="1040" height="560" fill="#fff"/>
+  <text x="40" y="44" font-size="22" font-weight="700" fill="#0f172a">KAI V1 control panel — concept (top view)</text>
+  <text x="40" y="66" font-size="13" fill="#64748b">Design hypothesis · not built · (A) = assumed dimension · layout mirrorable for left-handed use</text>
+
+  <!-- enclosure -->
+  <rect x="60" y="110" width="640" height="340" rx="28" fill="#f1f5f9" stroke="#334155" stroke-width="3"/>
+  <line x1="60" y1="470" x2="700" y2="470" stroke="#334155" marker-start="url(#d)" marker-end="url(#d)"/>
+  <text x="330" y="492" font-size="12" fill="#334155">≈ 220 mm (A)</text>
+  <line x1="40" y1="110" x2="40" y2="450" stroke="#334155" marker-start="url(#d)" marker-end="url(#d)"/>
+  <text x="24" y="290" font-size="12" fill="#334155" transform="rotate(-90 24 290)">≈ 120 mm (A)</text>
+
+  <!-- joystick -->
+  <circle cx="200" cy="290" r="92" fill="#e2e8f0" stroke="#64748b" stroke-width="2"/>
+  <circle cx="200" cy="290" r="46" fill="#334155"/>
+  <circle cx="200" cy="290" r="30" fill="#475569"/>
+  <g fill="#64748b" font-size="13" font-weight="700" text-anchor="middle">
+    <text x="200" y="186">J2 raise (up)</text><text x="200" y="404">J2 lower (down)</text>
+    <text x="78" y="294">J1 left</text><text x="324" y="294">J1 right</text>
+  </g>
+  <text x="200" y="430" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">JOYSTICK — oversized swappable handle</text>
+  <text x="200" y="446" font-size="11" fill="#64748b" text-anchor="middle">let go = stop</text>
+
+  <!-- buttons -->
+  <circle cx="400" cy="240" r="34" fill="#2563eb" stroke="#1e3a8a" stroke-width="3"/>
+  <circle cx="400" cy="240" r="4" fill="#fff"/>
+  <text x="400" y="296" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">ARM / MODE</text>
+  <text x="400" y="312" font-size="10" fill="#64748b" text-anchor="middle">hold 2 s · 1 raised dot</text>
+  <circle cx="400" cy="370" r="34" fill="#f59e0b" stroke="#92400e" stroke-width="3"/>
+  <circle cx="392" cy="370" r="4" fill="#fff"/><circle cx="408" cy="370" r="4" fill="#fff"/>
+  <text x="400" y="424" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">SLOW</text>
+  <text x="400" y="440" font-size="10" fill="#64748b" text-anchor="middle">2 raised dots</text>
+  <line x1="446" y1="240" x2="446" y2="370" stroke="#334155" marker-start="url(#d)" marker-end="url(#d)"/>
+  <text x="452" y="310" font-size="10" fill="#334155">30 mm</text>
+  <text x="452" y="324" font-size="10" fill="#334155">gap ≥ 20 (A)</text>
+
+  <!-- E-stop -->
+  <rect x="520" y="200" width="160" height="200" rx="18" fill="#fde047" stroke="#a16207" stroke-width="2"/>
+  <circle cx="600" cy="290" r="56" fill="#dc2626" stroke="#7f1d1d" stroke-width="4"/>
+  <circle cx="600" cy="290" r="40" fill="#ef4444"/>
+  <text x="600" y="296" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">STOP</text>
+  <text x="600" y="424" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">E-STOP (latching)</text>
+  <text x="600" y="440" font-size="10" fill="#64748b" text-anchor="middle">outer edge · ≥ 40 mm clear (A)</text>
+
+  <!-- LED + buzzer -->
+  <circle cx="400" cy="150" r="12" fill="#22c55e" stroke="#166534" stroke-width="2"/>
+  <circle cx="400" cy="150" r="20" fill="none" stroke="#86efac" stroke-width="3"/>
+  <text x="430" y="146" font-size="11" font-weight="700" fill="#0f172a">status LED</text>
+  <text x="430" y="160" font-size="10" fill="#64748b">colour + pattern + tone</text>
+  <circle cx="330" cy="150" r="9" fill="#94a3b8"/>
+  <text x="300" y="132" font-size="10" fill="#64748b">buzzer</text>
+
+  <!-- jack on side -->
+  <rect x="700" y="150" width="22" height="28" rx="4" fill="#0f172a"/>
+  <text x="730" y="162" font-size="11" font-weight="700" fill="#0f172a">3.5 mm jack</text>
+  <text x="730" y="176" font-size="10" fill="#64748b">2 assistive switches (optional)</text>
+  <rect x="700" y="380" width="22" height="28" rx="4" fill="#475569"/>
+  <text x="712" y="430" font-size="11" fill="#0f172a">cable to</text><text x="712" y="444" font-size="11" fill="#0f172a">controller</text>
+
+  <!-- side panel -->
+  <rect x="800" y="210" width="210" height="300" rx="12" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="816" y="236" font-size="14" font-weight="700" fill="#0f172a">LED states</text>
+  <g font-size="11" fill="#334155">
+    <circle cx="824" cy="258" r="6" fill="#e5e7eb" stroke="#94a3b8"/><text x="838" y="262">SAFE — white breathe</text>
+    <circle cx="824" cy="282" r="6" fill="#3b82f6"/><text x="838" y="286">ARMING — blue blink</text>
+    <circle cx="824" cy="306" r="6" fill="#22c55e"/><text x="838" y="310">ACTIVE — green</text>
+    <circle cx="824" cy="330" r="6" fill="#f59e0b"/><text x="838" y="334">SLOW — amber</text>
+    <circle cx="824" cy="354" r="6" fill="#dc2626"/><text x="838" y="358">FAULT — red flashes</text>
+    <circle cx="824" cy="378" r="6" fill="#7f1d1d"/><text x="838" y="382">ESTOP — solid red</text>
+  </g>
+  <text x="816" y="414" font-size="14" font-weight="700" fill="#0f172a">Switch-scan cycle</text>
+  <text x="816" y="436" font-size="11" fill="#334155">A: J1 left → J1 right → J2 up → J2 down</text>
+  <text x="816" y="454" font-size="11" fill="#334155">B: hold to move (SLOW speed)</text>
+  <text x="816" y="480" font-size="10" fill="#64748b">Not in V1: encoder, display, presets</text>
+</svg>

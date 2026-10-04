@@ -1,0 +1,6 @@
+.pio/
+.vscode/
+*.FCStd1
+*.kicad_prl
+*-backups/
+.DS_Store

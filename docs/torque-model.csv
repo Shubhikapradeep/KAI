@@ -1,0 +1,44 @@
+"# KAI J2 torque model output - EXAMPLE VALUES, NOT MEASUREMENTS"
+# parameter,value
+m_payload_kg,0.5
+m_ee_kg,0.08
+m_head_kg,0.35
+m_ballast_kg,1.1
+m_link_kg,0.9
+L_m,0.4
+e_m,0.09
+r_link_m,0.2
+spring_a_m,0.05
+spring_b_m,0.16
+spring_phi0_deg,95.0
+spring_force_N,248.3317348345415
+tau_friction_Nm,0.3
+alpha_rad_s2,0.7
+safety_factor,2.0
+theta_min_deg,-30
+theta_max_deg,30
+theta_step_deg,5
+
+# summary,value
+I_J2_kgm2,0.5234
+tau_dyn_Nm,0.366
+max_abs_tau_res_Nm,2.106
+tau_req_Nm (with payload),5.545
+max_abs_tau_res_no_payload_Nm,4.246
+tau_req_Nm (payload removed while armed),9.825
+spring_force_N,248.3
+
+theta_deg,spring_len_mm,tau_gravity_Nm,tau_spring_Nm,tau_res_Nm,tau_res_no_payload_Nm
+-30,146.1,10.22,12.326,-2.106,-4.246
+-25,150.4,10.612,12.41,-1.798,-4.018
+-20,154.8,10.937,12.397,-1.461,-3.746
+-15,159.1,11.192,12.295,-1.103,-3.439
+-10,163.4,11.376,12.111,-0.735,-3.108
+-5,167.6,11.487,11.851,-0.365,-2.761
+0,171.7,11.524,11.524,0.0,-2.403
+5,175.7,11.487,11.134,0.353,-2.043
+10,179.6,11.376,10.687,0.689,-1.685
+15,183.2,11.192,10.189,1.004,-1.333
+20,186.7,10.937,9.643,1.294,-0.991
+25,190.0,10.612,9.055,1.557,-0.663
+30,193.1,10.22,8.429,1.791,-0.349

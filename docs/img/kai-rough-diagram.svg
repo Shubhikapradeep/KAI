@@ -1,0 +1,413 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1400" height="900" viewBox="0 0 1400 900">
+
+  <defs>
+    <marker id="arrow"
+            markerWidth="10"
+            markerHeight="10"
+            refX="8"
+            refY="5"
+            orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#222"/>
+    </marker>
+
+    <style>
+      .title {
+        font: bold 32px Arial, sans-serif;
+        fill: #111;
+      }
+
+      .subtitle {
+        font: 18px Arial, sans-serif;
+        fill: #555;
+      }
+
+      .label {
+        font: bold 18px Arial, sans-serif;
+        fill: #111;
+      }
+
+      .small {
+        font: 15px Arial, sans-serif;
+        fill: #333;
+      }
+
+      .dimension {
+        font: 14px Arial, sans-serif;
+        fill: #555;
+      }
+
+      .arm {
+        fill: #d9d9d9;
+        stroke: #222;
+        stroke-width: 3;
+      }
+
+      .joint {
+        fill: white;
+        stroke: #222;
+        stroke-width: 4;
+      }
+
+      .motor {
+        fill: #eeeeee;
+        stroke: #222;
+        stroke-width: 3;
+      }
+
+      .spring {
+        fill: none;
+        stroke: #555;
+        stroke-width: 6;
+      }
+
+      .belt {
+        fill: none;
+        stroke: #222;
+        stroke-width: 3;
+        stroke-dasharray: 8 6;
+      }
+
+      .callout {
+        fill: none;
+        stroke: #555;
+        stroke-width: 2;
+        marker-end: url(#arrow);
+      }
+
+      .dimension-line {
+        stroke: #777;
+        stroke-width: 1.5;
+        marker-start: url(#arrow);
+        marker-end: url(#arrow);
+      }
+    </style>
+  </defs>
+
+
+  <!-- TITLE -->
+
+  <text x="60" y="60" class="title">
+    KAI — V1 Preliminary Mechanical Design
+  </text>
+
+  <text x="60" y="92" class="subtitle">
+    Kinetic Adaptive Interface | Gas-spring arm retrofit
+  </text>
+
+
+  <!-- ========================= -->
+  <!-- BASE -->
+  <!-- ========================= -->
+
+  <rect x="470" y="690"
+        width="300"
+        height="70"
+        rx="12"
+        class="arm"/>
+
+  <text x="555" y="733" class="label">
+    DONOR BASE
+  </text>
+
+
+  <!-- J1 MOTOR -->
+
+  <rect x="535" y="615"
+        width="170"
+        height="70"
+        rx="10"
+        class="motor"/>
+
+  <text x="570" y="657" class="label">
+    J1 MOTOR
+  </text>
+
+  <text x="570" y="680" class="small">
+    12 V gearmotor
+  </text>
+
+
+  <!-- J1 PIVOT -->
+
+  <circle cx="620"
+          cy="570"
+          r="42"
+          class="joint"/>
+
+  <circle cx="620"
+          cy="570"
+          r="10"
+          fill="#222"/>
+
+  <text x="575" y="510" class="label">
+    J1
+  </text>
+
+  <text x="535" y="530" class="small">
+    Base rotation
+  </text>
+
+
+  <!-- ========================= -->
+  <!-- LOWER ARM -->
+  <!-- ========================= -->
+
+  <rect x="600" y="380"
+        width="60"
+        height="190"
+        rx="20"
+        class="arm"/>
+
+  <text x="470" y="440" class="label">
+    DONOR ARM
+  </text>
+
+  <path d="M560 445 L600 445"
+        class="callout"/>
+
+
+  <!-- ========================= -->
+  <!-- GAS SPRING -->
+  <!-- ========================= -->
+
+  <line x1="575" y1="555"
+        x2="455" y2="420"
+        class="spring"/>
+
+  <line x1="455" y1="420"
+        x2="410" y2="370"
+        class="spring"/>
+
+  <text x="250" y="390" class="label">
+    GAS SPRING
+  </text>
+
+  <text x="250" y="415" class="small">
+    Passive counterbalance
+  </text>
+
+  <path d="M390 405 L455 420"
+        class="callout"/>
+
+
+  <!-- ========================= -->
+  <!-- J2 -->
+  <!-- ========================= -->
+
+  <circle cx="630"
+          cy="350"
+          r="42"
+          class="joint"/>
+
+  <circle cx="630"
+          cy="350"
+          r="10"
+          fill="#222"/>
+
+  <text x="700" y="325" class="label">
+    J2
+  </text>
+
+  <text x="700" y="350" class="small">
+    Arm elevation
+  </text>
+
+
+  <!-- ========================= -->
+  <!-- UPPER ARM -->
+  <!-- ========================= -->
+
+  <rect x="630" y="320"
+        width="350"
+        height="60"
+        rx="20"
+        transform="rotate(-15 630 350)"
+        class="arm"/>
+
+  <text x="790" y="280" class="label">
+    ARM LINK
+  </text>
+
+
+  <!-- ========================= -->
+  <!-- J2 MOTOR -->
+  <!-- ========================= -->
+
+  <rect x="810" y="400"
+        width="180"
+        height="75"
+        rx="10"
+        class="motor"/>
+
+  <text x="845" y="435" class="label">
+    J2 MOTOR
+  </text>
+
+  <text x="840" y="458" class="small">
+    Motor + belt drive
+  </text>
+
+
+  <!-- BELT -->
+  <ellipse cx="720"
+           cy="385"
+           rx="85"
+           ry="45"
+           class="belt"/>
+
+  <text x="720" y="445" class="small">
+    BELT
+  </text>
+
+
+  <!-- ========================= -->
+  <!-- END EFFECTOR -->
+  <!-- ========================= -->
+
+  <rect x="970" y="270"
+        width="180"
+        height="110"
+        rx="12"
+        class="arm"/>
+
+  <text x="995" y="315" class="label">
+    MODULAR
+  </text>
+
+  <text x="995" y="340" class="label">
+    END EFFECTOR
+  </text>
+
+  <text x="995" y="365" class="small">
+    Phone / camera / tool
+  </text>
+
+
+  <!-- ========================= -->
+  <!-- PAYLOAD ARROW -->
+  <!-- ========================= -->
+
+  <line x1="1060" y1="380"
+        x2="1060" y2="455"
+        class="callout"/>
+
+  <text x="1080" y="425" class="label">
+    Payload
+  </text>
+
+  <text x="1080" y="450" class="small">
+    500 g target
+  </text>
+
+
+  <!-- ========================= -->
+  <!-- CONTROL BOX -->
+  <!-- ========================= -->
+
+  <rect x="80" y="600"
+        width="260"
+        height="150"
+        rx="15"
+        class="arm"/>
+
+  <text x="125" y="635" class="label">
+    CONTROL BOX
+  </text>
+
+  <text x="115" y="670" class="small">
+    ESP32-S3
+  </text>
+
+  <text x="115" y="695" class="small">
+    Motor drivers
+  </text>
+
+  <text x="115" y="720" class="small">
+    E-STOP
+  </text>
+
+  <text x="115" y="745" class="small">
+    Limit switch inputs
+  </text>
+
+
+  <!-- JOYSTICK -->
+
+  <circle cx="210"
+          cy="510"
+          r="45"
+          class="joint"/>
+
+  <circle cx="210"
+          cy="510"
+          r="12"
+          fill="#222"/>
+
+  <text x="150" y="465" class="label">
+    JOYSTICK
+  </text>
+
+  <path d="M210 555 L210 600"
+        class="callout"/>
+
+
+  <!-- ========================= -->
+  <!-- DIMENSION / REACH -->
+  <!-- ========================= -->
+
+  <line x1="620" y1="800"
+        x2="1060" y2="800"
+        class="dimension-line"/>
+
+  <text x="770" y="825" class="dimension">
+    REACH — TBD FROM DONOR MEASUREMENTS
+  </text>
+
+
+  <!-- ========================= -->
+  <!-- DESIGN NOTES -->
+  <!-- ========================= -->
+
+  <rect x="1000" y="570"
+        width="330"
+        height="210"
+        rx="15"
+        fill="none"
+        stroke="#777"
+        stroke-width="2"/>
+
+  <text x="1030" y="610" class="label">
+    V1 DESIGN TARGETS
+  </text>
+
+  <text x="1030" y="645" class="small">
+    • 2 controlled axes
+  </text>
+
+  <text x="1030" y="675" class="small">
+    • 500 g useful-payload target
+  </text>
+
+  <text x="1030" y="705" class="small">
+    • ESP32-S3 controller
+  </text>
+
+  <text x="1030" y="735" class="small">
+    • Gas-spring counterbalance
+  </text>
+
+  <text x="1030" y="765" class="small">
+    • E-stop + physical limits
+  </text>
+
+
+  <!-- ========================= -->
+  <!-- STATUS -->
+  <!-- ========================= -->
+
+  <text x="60" y="850" class="small">
+    PRELIMINARY DESIGN — donor dimensions, pulley ratio and actuator torque remain TBD
+  </text>
+
+</svg>

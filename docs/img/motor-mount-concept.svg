@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 700" width="1040" height="700" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="d" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#334155"/></marker>
+    <pattern id="h" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="#94a3b8" stroke-width="1.5"/></pattern>
+  </defs>
+  <rect width="1040" height="700" fill="#ffffff"/>
+  <text x="40" y="44" font-size="22" font-weight="700" fill="#0f172a">J2 motor mount — preliminary concept (requires donor measurements)</text>
+  <rect x="40" y="56" width="640" height="26" rx="4" fill="#fffbeb" stroke="#d97706"/>
+  <text x="52" y="74" font-size="13" font-weight="700" fill="#92400e">Preliminary concept — dimensions to be finalized after donor inspection.</text>
+  <text x="700" y="74" font-size="12" fill="#64748b">Not a manufacturable model · mm · not to scale</text>
+
+  <!-- FRONT VIEW -->
+  <text x="60" y="118" font-size="15" font-weight="700" fill="#0f172a">FRONT VIEW (along J2 axis)</text>
+
+  <!-- donor base column (dashed = donor part) -->
+  <rect x="400" y="150" width="56" height="390" fill="url(#h)" stroke="#64748b" stroke-dasharray="6 4"/>
+  <text x="464" y="166" font-size="11" fill="#475569">donor base-side link /</text>
+  <text x="464" y="180" font-size="11" fill="#475569">upright (shape &amp; size TBD, D2/D10)</text>
+
+  <!-- bracket plate -->
+  <rect x="190" y="200" width="250" height="160" rx="6" fill="#fff7ed" stroke="#c2410c" stroke-width="2.5"/>
+  <text x="200" y="218" font-size="11" font-weight="700" fill="#9a3412">PETG bracket plate</text>
+
+  <!-- clamp holes to donor (U-bolt / split collar) -->
+  <g fill="#ffffff" stroke="#0f172a" stroke-width="1.5">
+    <circle cx="414" cy="222" r="5"/><circle cx="442" cy="222" r="5"/>
+    <circle cx="414" cy="338" r="5"/><circle cx="442" cy="338" r="5"/>
+  </g>
+  <text x="470" y="226" font-size="11" fill="#0f172a">4× Ø4.5 — U-bolt / split-collar</text>
+  <text x="470" y="240" font-size="11" fill="#0f172a">clamp to donor (no drilling)</text>
+
+  <!-- motor footprint dashed -->
+  <rect x="236" y="232" width="110" height="96" rx="6" fill="none" stroke="#475569" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="240" y="244" font-size="9" fill="#475569">motor footprint (datasheet, TBD)</text>
+  <!-- motor mount slots -->
+  <g fill="#ffffff" stroke="#0f172a" stroke-width="1.5">
+    <rect x="248" y="254" width="10" height="26" rx="5"/>
+    <rect x="324" y="254" width="10" height="26" rx="5"/>
+  </g>
+  <text x="60" y="258" font-size="11" fill="#0f172a">2× M3 slots, pattern per</text>
+  <text x="60" y="272" font-size="11" fill="#0f172a">motor datasheet; ±5 mm</text>
+  <text x="60" y="286" font-size="11" fill="#0f172a">travel for belt tension</text>
+  <line x1="196" y1="268" x2="244" y2="263" stroke="#334155"/>
+
+  <!-- motor pulley 20T -->
+  <circle cx="291" cy="290" r="16" fill="#e2e8f0" stroke="#0f172a" stroke-width="2"/>
+  <circle cx="291" cy="290" r="3" fill="#0f172a"/>
+  <text x="60" y="312" font-size="11" fill="#0f172a">GT2 20T pulley</text>
+  <text x="60" y="326" font-size="11" fill="#0f172a">pitch Ø 12.7</text>
+  <line x1="150" y1="316" x2="274" y2="294" stroke="#334155"/>
+
+  <!-- J2 pivot + sector pulley 60T -->
+  <circle cx="291" cy="460" r="48" fill="#ecfeff" stroke="#0e7490" stroke-width="2.5"/>
+  <circle cx="291" cy="460" r="14" fill="url(#h)" stroke="#475569" stroke-dasharray="4 3"/>
+  <circle cx="291" cy="460" r="3" fill="#0f172a"/>
+  <line x1="231" y1="460" x2="351" y2="460" stroke="#64748b" stroke-dasharray="8 3 2 3"/>
+  <line x1="291" y1="400" x2="291" y2="520" stroke="#64748b" stroke-dasharray="8 3 2 3"/>
+  <text x="466" y="440" font-size="11" fill="#0e7490" font-weight="700">printed GT2 60T sector pulley</text>
+  <text x="466" y="454" font-size="11" fill="#0e7490">pitch Ø 38.2 · clamps to link</text>
+  <text x="466" y="468" font-size="11" fill="#0e7490">bore clears pivot cap (D2)</text>
+  <text x="300" y="478" font-size="11" font-weight="700" fill="#1e3a8a">J2</text>
+
+  <!-- belt -->
+  <g stroke="#0f172a" stroke-width="2.5">
+    <line x1="275" y1="292" x2="243" y2="462"/>
+    <line x1="307" y1="292" x2="339" y2="462"/>
+  </g>
+  <text x="60" y="400" font-size="11" fill="#0f172a">GT2 belt, 6 mm wide</text>
+  <text x="60" y="414" font-size="11" fill="#0f172a">ratio 60:20 = 3:1</text>
+  <text x="60" y="428" font-size="11" fill="#0f172a">(final ratio after τ_req)</text>
+  <line x1="170" y1="404" x2="256" y2="390" stroke="#334155"/>
+
+  <!-- dimensions -->
+  <g stroke="#334155" stroke-width="1.2" fill="none">
+    <line x1="190" y1="190" x2="440" y2="190" marker-start="url(#d)" marker-end="url(#d)"/>
+    <line x1="176" y1="200" x2="176" y2="360" marker-start="url(#d)" marker-end="url(#d)"/>
+    <line x1="210" y1="290" x2="210" y2="460" marker-start="url(#d)" marker-end="url(#d)" stroke-dasharray="1 0"/>
+    <line x1="243" y1="290" x2="210" y2="290" stroke-dasharray="2 2"/>
+    <line x1="243" y1="460" x2="210" y2="460" stroke-dasharray="2 2"/>
+  </g>
+  <text x="270" y="184" font-size="12" fill="#0f172a">≈ 80 (A)</text>
+  <text x="120" y="230" font-size="12" fill="#0f172a">≈ 60 (A)</text>
+  <text x="128" y="372" font-size="12" fill="#0f172a">C ≈ 50–60</text>
+  <text x="128" y="386" font-size="11" fill="#64748b">adjustable (A)</text>
+
+  <!-- SECTION VIEW -->
+  <text x="640" y="118" font-size="15" font-weight="700" fill="#0f172a">SIDE SECTION (schematic)</text>
+  <rect x="640" y="260" width="40" height="280" fill="url(#h)" stroke="#64748b" stroke-dasharray="6 4"/>
+  <text x="620" y="560" font-size="11" fill="#475569">donor upright</text>
+  <rect x="680" y="270" width="12" height="130" fill="#fff7ed" stroke="#c2410c" stroke-width="2"/>
+  <text x="700" y="260" font-size="11" fill="#9a3412">plate t ≈ 5 (A)</text>
+  <path d="M640,290 h-14 v20 h14 M640,370 h-14 v20 h14" fill="none" stroke="#0f172a" stroke-width="2"/>
+  <text x="560" y="300" font-size="10" fill="#0f172a">U-bolt</text>
+  <rect x="692" y="300" width="70" height="70" rx="6" fill="#f1f5f9" stroke="#475569" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="698" y="340" font-size="10" fill="#475569">gearmotor</text>
+  <line x1="762" y1="335" x2="800" y2="335" stroke="#0f172a" stroke-width="3"/>
+  <rect x="800" y="320" width="14" height="30" fill="#e2e8f0" stroke="#0f172a"/>
+  <text x="820" y="318" font-size="10" fill="#0f172a">20T</text>
+  <line x1="807" y1="350" x2="807" y2="430" stroke="#0f172a" stroke-width="3"/>
+  <text x="816" y="392" font-size="10" fill="#0f172a">belt plane</text>
+  <rect x="796" y="430" width="22" height="90" fill="#ecfeff" stroke="#0e7490" stroke-width="2"/>
+  <text x="826" y="446" font-size="10" fill="#0e7490">60T sector</text>
+  <rect x="690" y="470" width="200" height="16" fill="#cbd5e1" stroke="#475569"/>
+  <text x="840" y="498" font-size="10" fill="#475569">moving link (donor)</text>
+  <line x1="660" y1="478" x2="930" y2="478" stroke="#64748b" stroke-dasharray="8 3 2 3"/>
+  <text x="900" y="474" font-size="10" fill="#1e3a8a" font-weight="700">J2 axis</text>
+  <g fill="none" stroke="#0e7490" stroke-width="1.5"><rect x="790" y="462" width="34" height="32" rx="4"/></g>
+  <text x="836" y="530" font-size="10" fill="#0e7490">hose clamps fix sector</text>
+  <text x="836" y="543" font-size="10" fill="#0e7490">to link, concentric to J2</text>
+
+  <!-- NOTES -->
+  <rect x="40" y="580" width="960" height="100" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="56" y="604" font-size="13" font-weight="700" fill="#0f172a">Notes</text>
+  <g font-size="11" fill="#334155">
+    <text x="56" y="624">(A) = assumption. Every dimension waits for donor measurements D2 (pivot Ø, fasteners) and D10 (mounting space). GT2 pitch diameters (20T 12.7, 60T 38.2) are standard GT2 values.</text>
+    <text x="56" y="642">Motor stays on the FIXED side, so its mass adds no gravity load at J2. The sector pulley is the only part on the moving link. Belt tension set low enough to slip under overload.</text>
+    <text x="56" y="660">No drilling of donor load paths; gas spring untouched (ADR-018). The same bracket pattern (plate + clamp + belt) is reused at J1 on the base clamp body.</text>
+  </g>
+  <line x1="340" y1="455" x2="462" y2="436" stroke="#0e7490"/>
+</svg>

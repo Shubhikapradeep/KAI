@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 660" width="1040" height="660" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="d" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#475569"/></marker>
+    <marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0f172a"/></marker>
+    <marker id="o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#c2410c"/></marker>
+  </defs>
+  <rect width="1040" height="660" fill="#ffffff"/>
+  <text x="40" y="44" font-size="22" font-weight="700" fill="#0f172a">KAI V1 — mechanical concept (side view)</text>
+  <text x="40" y="66" font-size="13" fill="#b45309">Preliminary concept — dimensions to be finalized after donor inspection. Not to scale.</text>
+
+  <!-- Desk -->
+  <rect x="40" y="520" width="520" height="22" fill="#e2e8f0" stroke="#94a3b8"/>
+  <text x="50" y="560" font-size="12" fill="#64748b">desk</text>
+  <!-- Clamp -->
+  <path d="M150,500 h60 v20 h-60 z M150,542 h60 v14 h-60 z M150,500 v56" fill="#cbd5e1" stroke="#475569"/>
+  <text x="216" y="556" font-size="11" fill="#475569">desk clamp</text>
+  <!-- Base column -->
+  <rect x="168" y="400" width="26" height="100" fill="#cbd5e1" stroke="#475569"/>
+  <!-- J1 axis -->
+  <line x1="181" y1="380" x2="181" y2="575" stroke="#64748b" stroke-dasharray="8 4 2 4"/>
+  <text x="120" y="592" font-size="12" font-weight="700" fill="#1e3a8a">J1 axis (yaw)</text>
+  <path d="M160,488 a24,8 0 1,0 42,0" fill="none" stroke="#1d4ed8" stroke-width="2" marker-end="url(#o)"/>
+
+  <!-- J1 actuator -->
+  <rect x="70" y="440" width="70" height="44" rx="6" fill="#fff7ed" stroke="#c2410c" stroke-width="2"/>
+  <text x="105" y="459" font-size="11" font-weight="700" fill="#7c2d12" text-anchor="middle">J1 motor</text>
+  <text x="105" y="474" font-size="10" fill="#9a3412" text-anchor="middle">on fixed base</text>
+  <path d="M140,450 L170,446 M140,476 L170,480" stroke="#c2410c" stroke-width="2"/>
+  <text x="60" y="500" font-size="10" fill="#9a3412">belt → pulley</text>
+
+  <!-- Parallelogram arm: J2 pivot ~ (181,400) head pivot ~ (515,280) -->
+  <line x1="181" y1="396" x2="515" y2="276" stroke="#334155" stroke-width="10" stroke-linecap="round"/>
+  <line x1="185" y1="428" x2="519" y2="308" stroke="#334155" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="181" cy="396" r="9" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+  <circle cx="185" cy="428" r="6" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+  <circle cx="515" cy="276" r="7" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+  <circle cx="519" cy="308" r="6" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+  <text x="150" y="392" font-size="13" font-weight="700" fill="#1e3a8a">J2</text>
+  <text x="80" y="376" font-size="11" fill="#1e3a8a">spring-arm pitch</text>
+  <path d="M225,410 a50,50 0 0,0 -6,-40" fill="none" stroke="#1d4ed8" stroke-width="2" marker-end="url(#o)"/>
+
+  <!-- Gas spring -->
+  <line x1="190" y1="444" x2="330" y2="354" stroke="#0f766e" stroke-width="11" stroke-linecap="round"/>
+  <line x1="300" y1="373" x2="380" y2="321" stroke="#14b8a6" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="190" cy="444" r="4" fill="#0f766e"/>
+  <circle cx="380" cy="321" r="4" fill="#0f766e"/>
+  <text x="246" y="458" font-size="12" font-weight="700" fill="#0f766e">gas spring</text>
+  <text x="246" y="473" font-size="10" fill="#0f766e">never opened (ADR-018)</text>
+  <text x="246" y="487" font-size="10" fill="#0f766e">ends A, B: measure (D5)</text>
+
+  <!-- J2 actuator -->
+  <rect x="225" y="286" width="96" height="40" rx="6" fill="#fff7ed" stroke="#c2410c" stroke-width="2"/>
+  <text x="273" y="303" font-size="11" font-weight="700" fill="#7c2d12" text-anchor="middle">J2 motor</text>
+  <text x="273" y="317" font-size="10" fill="#9a3412" text-anchor="middle">worm, provisional</text>
+  <path d="M225,296 L186,388 M234,326 L192,402" stroke="#c2410c" stroke-width="2"/>
+  <text x="110" y="300" font-size="10" fill="#9a3412">belt to sector</text>
+  <text x="110" y="313" font-size="10" fill="#9a3412">pulley on J2</text>
+
+  <!-- Head -->
+  <rect x="508" y="270" width="24" height="64" fill="#cbd5e1" stroke="#475569"/>
+  <rect x="532" y="282" width="18" height="40" fill="#e2e8f0" stroke="#475569"/>
+  <text x="440" y="232" font-size="12" font-weight="700" fill="#1e3a8a">J3 head swivel</text>
+  <text x="440" y="218" font-size="10" fill="#64748b">optional actuator (V1 stretch)</text>
+  <rect x="520" y="340" width="40" height="20" rx="4" fill="none" stroke="#c2410c" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="516" y="376" font-size="10" fill="#9a3412">J3 actuator (opt.)</text>
+  <!-- End effector -->
+  <rect x="550" y="290" width="18" height="24" fill="#a7f3d0" stroke="#059669"/>
+  <rect x="568" y="250" width="14" height="104" rx="3" fill="#334155"/>
+  <text x="592" y="276" font-size="12" font-weight="700" fill="#065f46">end effector</text>
+  <text x="592" y="291" font-size="10" fill="#065f46">Arca clamp + ¼"-20</text>
+  <text x="592" y="305" font-size="10" fill="#065f46">phone / camera</text>
+  <text x="592" y="320" font-size="10" fill="#065f46">target ≈ 0.5 kg device</text>
+  <text x="592" y="338" font-size="10" fill="#64748b">head tilt: manual in V1</text>
+
+  <!-- Dimensions -->
+  <g stroke="#475569" stroke-width="1.2" fill="none">
+    <line x1="176" y1="378" x2="510" y2="258" marker-start="url(#d)" marker-end="url(#d)" transform="translate(-10,-60)"/>
+    <line x1="181" y1="618" x2="575" y2="618" marker-start="url(#d)" marker-end="url(#d)"/>
+    <line x1="181" y1="575" x2="181" y2="624" stroke-dasharray="3 3"/>
+    <line x1="575" y1="360" x2="575" y2="624" stroke-dasharray="3 3"/>
+    <line x1="690" y1="180" x2="690" y2="390" marker-start="url(#d)" marker-end="url(#d)"/>
+    <line x1="132" y1="400" x2="132" y2="520" marker-start="url(#d)" marker-end="url(#d)"/>
+  </g>
+  <text x="300" y="248" font-size="12" fill="#334155" transform="rotate(-19.8 300 248)">L ≈ 400 mm (estimate)</text>
+  <text x="300" y="640" font-size="12" fill="#334155">reach target ≈ 400–500 mm (target, not validated)</text>
+  <text x="697" y="282" font-size="12" fill="#334155">vertical</text>
+  <text x="697" y="297" font-size="12" fill="#334155">travel 260 mm</text><text x="697" y="312" font-size="12" fill="#334155">(mfr spec)</text>
+  <text x="44" y="404" font-size="11" fill="#334155">h₀ ≈ 100–150 mm</text>
+  <text x="44" y="418" font-size="11" fill="#334155">(assumption)</text>
+  <text x="520" y="406" font-size="11" fill="#334155">e ≈ 80–100 mm (assumption)</text>
+  <line x1="519" y1="392" x2="575" y2="392" stroke="#475569" stroke-width="1.2" marker-start="url(#d)" marker-end="url(#d)"/>
+
+  <!-- Gravity -->
+  <line x1="740" y1="110" x2="740" y2="190" stroke="#0f172a" stroke-width="3" marker-end="url(#g)"/>
+  <text x="752" y="156" font-size="16" font-weight="700" fill="#0f172a">g</text>
+
+  <!-- Side panel -->
+  <rect x="790" y="96" width="220" height="430" rx="12" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="806" y="124" font-size="14" font-weight="700" fill="#0f172a">V1 joint plan</text>
+  <g font-size="12" fill="#334155">
+    <text x="806" y="150"><tspan font-weight="700" fill="#1e3a8a">J1</tspan> base yaw — motorized</text>
+    <text x="806" y="172"><tspan font-weight="700" fill="#1e3a8a">J2</tspan> spring arm — motorized</text>
+    <text x="806" y="194"><tspan font-weight="700" fill="#1e3a8a">J3</tspan> head swivel — optional</text>
+    <text x="806" y="216">Head tilt/rotate — manual</text>
+  </g>
+  <text x="806" y="252" font-size="14" font-weight="700" fill="#0f172a">Labels</text>
+  <g font-size="11" fill="#334155">
+    <text x="806" y="276">mfr spec — published by maker</text>
+    <text x="806" y="294">estimate — derived, unconfirmed</text>
+    <text x="806" y="312">assumption — placeholder</text>
+    <text x="806" y="330">target — goal, not validated</text>
+  </g>
+  <text x="806" y="366" font-size="14" font-weight="700" fill="#0f172a">Key unknowns</text>
+  <g font-size="11" fill="#334155">
+    <text x="806" y="390">• residual torque vs angle (D7)</text>
+    <text x="806" y="408">• friction per joint (D8)</text>
+    <text x="806" y="426">• spring end geometry (D5)</text>
+    <text x="806" y="444">• bracket space (D10)</text>
+    <text x="806" y="462">• ballast need: 2 kg min load (D4)</text>
+    <text x="806" y="480">• rise when unloaded (D11)</text>
+  </g>
+  <rect x="806" y="494" width="12" height="12" fill="#fff7ed" stroke="#c2410c" stroke-width="2"/>
+  <text x="824" y="505" font-size="11" fill="#334155">proposed actuator location</text>
+</svg>

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 600" width="1040" height="600" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <marker id="d" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#334155"/></marker>
+  </defs>
+  <rect width="1040" height="600" fill="#fff"/>
+  <text x="40" y="44" font-size="22" font-weight="700" fill="#0f172a">End effector — modular mount concept</text>
+  <rect x="40" y="56" width="560" height="24" rx="4" fill="#fffbeb" stroke="#d97706"/>
+  <text x="50" y="73" font-size="12" font-weight="700" fill="#92400e">Preliminary concept — dimensions to be finalized after donor inspection.</text>
+
+  <text x="40" y="118" font-size="15" font-weight="700" fill="#0f172a">EXPLODED SIDE VIEW (arm → device)</text>
+  <!-- 0 VESA -->
+  <rect x="60" y="160" width="16" height="170" fill="#cbd5e1" stroke="#475569"/>
+  <text x="40" y="350" font-size="11" fill="#475569">0 · donor VESA</text>
+  <text x="40" y="364" font-size="10" fill="#64748b">75×75, 4×M4</text>
+  <!-- 1 adapter -->
+  <rect x="140" y="150" width="20" height="190" rx="3" fill="#fff7ed" stroke="#c2410c" stroke-width="2"/>
+  <text x="122" y="380" font-size="11" fill="#9a3412">1 · adapter plate</text>
+  <text x="122" y="394" font-size="10" fill="#9a3412">≈100×100×6 (A)</text>
+  <!-- 2 clamp -->
+  <path d="M220,200 h40 v-10 h14 v110 h-14 v-10 h-40 z" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/>
+  <circle cx="240" cy="320" r="10" fill="#4338ca"/><line x1="240" y1="300" x2="240" y2="310" stroke="#4338ca" stroke-width="3"/>
+  <text x="206" y="350" font-size="11" fill="#3730a3">2 · dovetail clamp</text>
+  <text x="206" y="364" font-size="10" fill="#3730a3">screw knob, tool-free</text>
+  <!-- 3 attachment plate -->
+  <path d="M330,196 h22 l8,8 v92 l-8,8 h-22 z" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
+  <circle cx="341" cy="200" r="3.5" fill="#0f172a"/><circle cx="341" cy="300" r="3.5" fill="#0f172a"/>
+  <text x="312" y="330" font-size="11" fill="#065f46">3 · attachment plate</text>
+  <text x="312" y="344" font-size="10" fill="#065f46">Arca dovetail ≈38 wide (A)</text>
+  <text x="312" y="358" font-size="10" fill="#065f46">M3 stop screws both ends</text>
+  <!-- 4 phone clamp + phone -->
+  <rect x="420" y="236" width="18" height="24" fill="#94a3b8"/>
+  <text x="400" y="286" font-size="10" fill="#334155">¼"-20 captive</text>
+  <path d="M438,222 h28 v52 h-28" fill="none" stroke="#334155" stroke-width="4"/>
+  <rect x="466" y="170" width="14" height="156" rx="4" fill="#334155"/>
+  <text x="490" y="232" font-size="11" fill="#0f172a">4 · phone clamp</text>
+  <text x="490" y="246" font-size="11" fill="#0f172a">+ device</text>
+  <text x="490" y="262" font-size="10" fill="#64748b">attach + device ≤ ~500 g target</text>
+  <g stroke="#334155" stroke-width="1.5" fill="none" stroke-dasharray="4 3">
+    <line x1="78" y1="245" x2="136" y2="245" marker-end="url(#a)"/>
+    <line x1="162" y1="245" x2="216" y2="245" marker-end="url(#a)"/>
+    <line x1="290" y1="245" x2="326" y2="245" marker-end="url(#a)"/>
+    <line x1="362" y1="248" x2="416" y2="248" marker-end="url(#a)"/>
+  </g>
+
+  <!-- DOVETAIL SECTION -->
+  <text x="640" y="118" font-size="15" font-weight="700" fill="#0f172a">DOVETAIL SECTION</text>
+  <path d="M680,250 L720,190 L860,190 L900,250 Z" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
+  <path d="M650,190 L715,190 L675,250 L675,262 L650,262 Z M930,190 L865,190 L905,250 L905,262 L930,262 Z" fill="#e0e7ff" stroke="#4338ca" stroke-width="1.5"/>
+  <rect x="650" y="262" width="280" height="20" fill="#e0e7ff" stroke="#4338ca"/>
+  <line x1="680" y1="168" x2="900" y2="168" stroke="#334155" marker-start="url(#d)" marker-end="url(#d)"/>
+  <text x="742" y="160" font-size="12" fill="#0f172a">≈ 38 mm (A, Arca-compatible)</text>
+  <text x="745" y="226" font-size="11" fill="#065f46">attachment plate</text>
+  <text x="700" y="300" font-size="11" fill="#3730a3">clamp jaws close on the dovetail flanks</text>
+  <text x="700" y="316" font-size="11" fill="#64748b">stop screws block sideways slide-out</text>
+
+  <!-- ATTACHMENT OPTIONS -->
+  <text x="40" y="440" font-size="15" font-weight="700" fill="#0f172a">V1 ATTACHMENTS (same plate standard)</text>
+  <g font-size="12">
+    <rect x="40" y="456" width="220" height="92" rx="10" fill="#f8fafc" stroke="#cbd5e1"/>
+    <text x="56" y="482" font-weight="700" fill="#0f172a">Phone clamp</text>
+    <text x="56" y="502" fill="#334155">spring jaws, ¼"-20</text>
+    <text x="56" y="520" fill="#64748b">mass: UNKNOWN</text>
+    <rect x="280" y="456" width="220" height="92" rx="10" fill="#f8fafc" stroke="#cbd5e1"/>
+    <text x="296" y="482" font-weight="700" fill="#0f172a">Camera / webcam</text>
+    <text x="296" y="502" fill="#334155">tripod socket on ¼"-20</text>
+    <text x="296" y="520" fill="#64748b">mass: UNKNOWN</text>
+    <rect x="520" y="456" width="220" height="92" rx="10" fill="#f8fafc" stroke="#cbd5e1"/>
+    <text x="536" y="482" font-weight="700" fill="#0f172a">Card / reading holder</text>
+    <text x="536" y="502" fill="#334155">printed, integral to plate</text>
+    <text x="536" y="520" fill="#64748b">mass: ~30 g (estimate)</text>
+    <rect x="760" y="456" width="240" height="92" rx="10" fill="#fff" stroke="#cbd5e1" stroke-dasharray="5 4"/>
+    <text x="776" y="482" font-weight="700" fill="#64748b">Tablet holder — V2</text>
+    <text x="776" y="502" fill="#64748b">likely above payload target</text>
+  </g>
+  <text x="40" y="580" font-size="11" fill="#64748b">Swap only in SAFE at the lowest arm position · re-check spring balance if head mass changes · (A) = assumption</text>
+</svg>
